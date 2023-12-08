@@ -1,0 +1,59 @@
+version: "3.1"
+
+rules:
+- rule: Welcome User
+  steps:
+  - action: utter_welcome
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Tell the user about AppExe when he/she asks
+  steps:
+  - intent: appexe
+  - action: utter_appexe
+
+- rule: Connect user to an agent
+  steps:
+  - intent: agent
+  - action: utter_agent
+
+- rule: Tell user about cost
+  steps:
+  - intent: cost
+  - action: utter_cost
+
+- rule: Give product demo
+  steps:
+  - intent: demo
+  - action: utter_demo
+
+- rule: Collect feedback
+  steps:
+  - intent: feedback
+  - action: utter_feedback
+
+- rule: Tell the user about languages
+  steps:
+  - intent: language
+  - action: utter_language
+
+- rule: Tell the user what you can do
+  steps:
+  - intent: services
+  - action: utter_services
+
+- rule: Tell the user you did not understand
+  steps:
+  - intent: fallback
+  - action: utter_fallback
+
+
+

@@ -1,0 +1,176 @@
+version: "3.1"
+
+nlu:
+- intent: fallback
+  examples: 
+    - text: asdfasdfasdf
+    - text: kjdshfakjshdf
+    - text: dfkhdhxlfsdl
+    - text: xkjkshdkklsdjfl
+    - text: hwefhwhio34hjsdl
+    - text: iesrofjljfdskljklj
+    - text: hdkncwllkfjdljei
+    - text: bdsjzbfkjlj
+    - text: oooooooooooooooooo
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - fine
+    - perfect
+    - nice
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - AppExe is a product designed by Mobilous. It is a patented software that allows users to create cross-platform mobile and desktop applications without coding. AppExe generates iOS, Android, Windows Phone, Desktop, and HTML5 apps in one step using a graphical user interface. Users can sign up for a 30-day free trial of AppExe on the Mobilous website or login to their existing account. AppExe is developed by Mobilous Inc, a company that specializes in zero-programming, mobile app building technology for small and medium-sized businesses. We are known for providing tools and platforms that enable businesses to create custom mobile apps without extensive coding knowledge. We focus on delivering solutions that streamline business processes, enhance communication, and improve overall efficiency.
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - introduce yourself.
+    - give me your introduction.
+    - what are you?
+    - what is mobichat
+    - who is mobichat
+
+- intent: appexe
+  examples:
+    - text: appexe
+    - text: what is appexe?
+    - text: about appexe
+    - text: want to know about appexe
+    - text: tell me about appexe
+    - text: product
+    - text: tell me about your product
+    - text: what is your product?
+
+- intent: agent
+  examples:
+    - text: agent
+    - text: human
+    - text: talk to a human
+    - text: talk to an agent
+    - text: contact customer support
+    - text: support
+
+- intent: cost
+  examples:
+    - text: product cost
+    - text: how much does your product cost?
+    - text: cost of appexe
+    - text: service cost
+    - text: how much does your services cost?
+
+- intent: demo
+  examples:
+    - text: how does your product work?
+    - text: working of appexe
+    - text: demo
+    - text: demo of appexe
+    - text: how does appexe work?
+    - text: can i get a demo?
+    - text: tutorial
+
+- intent: feedback
+  examples:
+    - text: how can i provide feedback
+    - text: feedback
+    - text: feedback of appexe
+    - text: want to give feedback
+    - text: disappointed with product
+    - text: happy with product
+
+- intent: language
+  examples:
+    - text: language
+    - text: in which languages do you give support?
+    - text: understand language
+    - text: languages
+    - text: can you help me in a different language?
+
+- intent: services
+  examples:
+    - text: services
+    - text: what do you do?
+    - text: what can you do?
+    - text: services offered
+    - text: what services do you offer?
+

@@ -1,0 +1,72 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - appexe
+  - agent
+  - cost
+  - demo
+  - feedback
+  - language
+  - services
+  - fallback
+
+responses:
+  utter_welcome:
+  - text: "Hello and welcome! How can I assist you today?"
+
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "I am always here to cheer you up!"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am MobiChat, a bot powered by Rasa serving Mobilous and most importantly you."
+
+  utter_appexe:
+  - text: "AppExe is a product designed by Mobilous. It is a patented software that allows users to create cross-platform mobile and desktop applications without coding. AppExe generates iOS, Android, Windows Phone, Desktop, and HTML5 apps in one step using a graphical user interface. Users can sign up for a 30-day free trial of AppExe on the Mobilous website or login to their existing account. AppExe is developed by Mobilous Inc, a company that specializes in zero-programming, mobile app building technology for small and medium-sized businesses. We are known for providing tools and platforms that enable businesses to create custom mobile apps without extensive coding knowledge. We focus on delivering solutions that streamline business processes, enhance communication, and improve overall efficiency."
+
+  utter_agent:
+  - text: "Sure, I can line you up with an agent for further assistance in a while. Please wait."
+
+  utter_cost:
+  - text: "To find out the cost of AppExe and other services we offer, head over to our website: https://www.mobilous.com"
+
+  utter_demo:
+  - text: "Head over to this link to view a demo for our product: https://drive.google.com/file/d/1lNQptKv_kq_bVvcLgQm9gn3qTW9eZp1W/view"
+
+  utter_feedback:
+  - text: "We love to hear your feedback! You can provide it to us by contacting us at this link: https://www.mobilous.com/contact-us"
+
+  utter_language:
+  - text: "Sorry, but as of now, I can serve you only using the English language."
+
+  utter_services:
+  - text: "I can tell you about our product, its demo and its cost, connect you to an agent, tell you about my supported languages and listen to your feedback."
+
+  utter_fallback:
+  - text: "I'm sorry, I didn't understand that. Can you please rephrase?"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - utter_welcome

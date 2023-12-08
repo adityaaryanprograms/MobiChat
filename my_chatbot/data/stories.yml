@@ -1,0 +1,73 @@
+version: "3.1"
+
+stories:
+- story: about welcome
+  steps:
+  - action: utter_welcome
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: about appexe
+  steps:
+  - intent: appexe
+  - action: utter_appexe
+
+- story: about agent
+  steps:
+  - intent: agent
+  - action: utter_agent
+
+- story: about cost
+  steps:
+  - intent: cost
+  - action: utter_cost
+
+- story: about demo
+  steps:
+  - intent: demo
+  - action: utter_demo
+
+- story: about feedback
+  steps:
+  - intent: feedback
+  - action: utter_feedback
+
+- story: about language
+  steps:
+  - intent: language
+  - action: utter_language
+
+- story: about services
+  steps:
+  - intent: services
+  - action: utter_services
+
+- story: about fallback
+  steps:
+  - intent: fallback
+  - action: utter_fallback
