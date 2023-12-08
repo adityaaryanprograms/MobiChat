@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request
 from rasa.core.agent import Agent
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app, resources={r"/get_response": {"origins": "https://adityaaryanprograms.github.io/MobiChat/"}})
 
 # Load Rasa model
 agent = Agent.load("D:\MobiChat\my_chatbot\models")
