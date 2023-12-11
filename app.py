@@ -8,11 +8,11 @@ CORS(app, resources={r"/get_response": {"origins": "https://adityaaryanprograms.
 # Load Rasa model
 agent = Agent.load("D:\MobiChat\my_chatbot\models")
 
-@app.route("/")
+@app.route("https://adityaaryanprograms.github.io/MobiChat/")
 def index():
     return render_template("index.html")
 
-@app.route("/get_response", methods=["POST"])
+@app.route("https://adityaaryanprograms.github.io/MobiChat/get_response", methods=["POST"])
 async def get_response():
     user_message = request.form["user_message"]
     response = await agent.handle_text(user_message)
